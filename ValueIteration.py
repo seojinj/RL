@@ -24,7 +24,7 @@ class ValueIteration:
         # P is sparse: vector representation > huge (think of as function)
         self.R = self.mdp.rewardmatrix# reward function
         
-    def Iterate(self):
+    def planOn(self):
         return self.valueIteration()
         
     def valueIteration(self):

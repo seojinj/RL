@@ -22,7 +22,7 @@ class PolicyIteration:
         self.V = AssignmentMap([(s,v) for s,v in zip(self.S,vi)])
         self.policy = AssignmentMap([(s,self.A[0]) for s in self.S])
         
-    def Iterate(self):
+    def planOn(self):
         while True:
             self.policyEvaluation()
             output = self.policyImprovement()
